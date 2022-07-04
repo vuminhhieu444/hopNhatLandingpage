@@ -1,0 +1,35 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+}
+.body main {
+  width: 100%;
+  height: 40%;
+  z-index: 9;
+}
+.body main img {
+  height: 90vh;
+  width: 100%;
+}
+.body .body__header {
+  width: 100%;
+}
+.body .body__header .navbar {
+  top: 1000px;
+  left: 100px;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  background-color: yellow !important;
+}
+.body .body__header .navbar #logo {
+  margin-left: 20%;
+}
+.body .body__header #myNavbar {
+  margin-left: 0%;
+}
+.body .body__header #myNavbar ul li {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=Landingpage.css%C6%B0.map */

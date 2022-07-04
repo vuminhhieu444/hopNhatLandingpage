@@ -1,0 +1,124 @@
+body {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  overflow-x: hidden;
+  height: auto;
+}
+body .body__background {
+  right: 0%;
+  position: absolute;
+  width: 100vw;
+  margin-top: 10%;
+}
+body .body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 33;
+}
+body .body main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .body main .slide img {
+  position: relative;
+  margin-top: 3.6%;
+  z-index: 100;
+  width: 100%;
+}
+body .body main .main__deases {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .body main .main__deases .deases__blur-back-ground {
+  position: relative;
+  top: -15%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground {
+  position: relative;
+  left: 0px;
+  margin-top: -6%;
+  width: 100%;
+  height: 100%;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__second__title {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .title__deseas__rate {
+  text-align: right;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue {
+  margin: auto;
+  margin-top: 8.9%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .deases__second__wommen--img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .deases__second__wommen--img .left--issue__issue {
+  margin-left: 0%;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/woman-image.png);
+  background-repeat: no-repeat;
+  margin-top: 0px;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__left--issue {
+  position: relative;
+}
+body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__left--issue .left--issue__issue {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/left-women-issue.png);
+  background-repeat: no-repeat;
+}
+body .body .body__header {
+  width: 100%;
+}
+body .body .body__header .navbar {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  height: 60px;
+  background-image: url(./images/Asset\ 11.png);
+}
+body .body .body__header .navbar #logo {
+  vertical-align: middle;
+  margin-left: 17%;
+  margin-top: -0.5%;
+  position: relative;
+  width: 60%;
+}
+body .body .body__header .navbar #logo a {
+  margin-top: 2%;
+}
+body .body .body__header .navbar #logo a img {
+  transform: scale(0.7, 0.7);
+}
+body .body .body__header #myNavbar {
+  width: 100%;
+  margin-left: 0%;
+}
+body .body .body__header #myNavbar ul li {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=Landingpage.css.map */
