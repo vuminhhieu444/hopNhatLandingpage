@@ -1,5 +1,5 @@
 body {
-  position: absolute;
+  position: relative;
   height: 100vh;
   width: 100vw;
   left: 0px;
@@ -20,126 +20,6 @@ body .body {
   z-index: 33;
 }
 body .body main {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-body .body main .slide img {
-  position: relative;
-  margin-top: 3.6%;
-  z-index: 100;
-  width: 100%;
-}
-body .body main .main__deases {
-  position: relative;
-  width: 100%;
-  height: fit-content;
-}
-body .body main .main__deases .deases__blur-back-ground {
-  position: relative;
-  top: -15%;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground {
-  position: relative;
-  left: 0px;
-  margin-top: -10.5%;
-  width: 100%;
-  height: 100%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__second__title {
-  margin: auto;
-  width: 60%;
-  height: 100%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .title__deseas__rate {
-  text-align: right;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue {
-  margin: auto;
-  margin-top: -0.6%;
-  width: 60%;
-  height: 100%;
-  display: flex;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .deases__second__wommen--img {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  margin-top: 22%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .deases__second__wommen--img img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: auto;
-  transform: scale(5.5, 6);
-  padding: 0px;
-  margin-left: -6%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__left--issue {
-  position: relative;
-  margin-left: 0%;
-  z-index: 40;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__left--issue .left--issue__issue {
-  width: 100%;
-  height: 40%;
-  margin-top: 5%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__left--issue .left--issue__issue img {
-  width: 100%;
-  height: 100%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__right--issue {
-  position: relative;
-  margin-left: -4%;
-  z-index: 40;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__right--issue .right--issue__issue {
-  width: 100%;
-  height: 40%;
-  margin-top: 5%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .deases__issue .second__title__right--issue .right--issue__issue img {
-  width: 100%;
-  height: 100%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product {
-  margin: auto;
-  margin-top: 8.9%;
-  width: 60%;
-  height: 100%;
-  display: flex;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product .second__title__left--issue {
-  position: relative;
-  margin-left: 0%;
-  z-index: 40;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product .second__title__left--issue .left--issue__issue {
-  width: 100%;
-  height: 40%;
-  margin-top: 5%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product .second__title__left--issue .left--issue__issue img {
-  width: 100%;
-  height: 100%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product .second__title__right--issue {
-  position: relative;
-  margin-left: -4%;
-  z-index: 40;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product .second__title__right--issue .right--issue__issue {
-  width: 100%;
-  height: 40%;
-  margin-top: 5%;
-}
-body .body main .main__deases .deases__blur-back-ground .deases__second-back-ground .main__suggest-product .second__title__right--issue .right--issue__issue img {
   width: 100%;
   height: 100%;
 }
@@ -152,7 +32,7 @@ body .body .body__header .navbar {
   right: 0px;
   width: 100%;
   z-index: 999;
-  position: absolute;
+  position: relative;
   height: 60px;
   background-image: url(./images/Asset\ 11.png);
 }
@@ -175,6 +55,523 @@ body .body .body__header #myNavbar {
 }
 body .body .body__header #myNavbar ul li {
   text-transform: uppercase;
+}
+body .body main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__banner-background {
+  position: relative;
+}
+body .body main .main__banner-background .banner__img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__banner-background .banner__img img {
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__women-issue-background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__women-issue-background .issue-background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__women-issue-background .issue-background img {
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__women-issue-background .issue__title {
+  margin-top: 1%;
+  color: #663903;
+  font-weight: 800;
+  position: absolute;
+  top: 0px;
+  height: fit-content;
+  width: 100%;
+}
+body .body main .main__women-issue-background .issue__title .title__title {
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+}
+body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+  font-size: 2.5rem;
+  text-align: left;
+}
+body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+  font-size: 1.5rem;
+  text-align: right;
+}
+body .body main .main__women-issue-background .issue__title .title__title hr {
+  width: 85%;
+}
+body .body main .main__product-background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .product__product-image-silent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .product__product-image-silent img {
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .product__title {
+  color: #663903;
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  height: fit-content;
+}
+body .body main .main__product-background .main__product__container .product__title .title {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+body .body main .main__product-background .main__product__container .product__title .title hr {
+  height: 20px;
+  font-weight: 500;
+}
+body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+  font-size: 3.5rem;
+  text-align: left;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+  font-size: 1.5rem;
+  text-align: right;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+  font-size: 3.5rem;
+}
+body .body main .main__product-background .main__product__container .product__gredient {
+  position: absolute;
+  top: 24%;
+  width: 100%;
+  height: 27%;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient {
+  position: relative;
+  height: 100%;
+  width: 48%;
+  margin: auto;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient {
+  position: absolute;
+  height: 50%;
+  width: 36%;
+  top: 0px;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
+  position: absolute;
+  top: 20%;
+  color: #013B22;
+  font-weight: 800;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
+  margin-top: 22%;
+  margin-left: 7%;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+  position: absolute;
+  height: 50%;
+  width: 36%;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  font-size: 1.1rem;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
+  color: #013B22;
+  font-weight: 800;
+}
+body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
+  margin-top: 2%;
+  margin-right: 7%;
+}
+body .body main .main__product-background .main__product__container .gredient__floor {
+  position: absolute;
+  bottom: 0px;
+  height: 48%;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: 48%;
+  left: 0px;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text {
+  margin: auto;
+  width: 61%;
+  height: 68%;
+  margin-top: 3.5%;
+  text-align: center;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  color: #013B22;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+  padding-top: 2%;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  color: #013B22;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__right-benefit {
+  position: absolute;
+  top: 0px;
+  left: 2%;
+  height: 32%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__right-benefit .benefit__text {
+  height: 30%;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__left-benefit {
+  position: absolute;
+  top: 0px;
+  right: 2%;
+  height: 32%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  background-color: #013B22;
+  opacity: 0.5;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__left-benefit .benefit__text {
+  margin-top: 35%;
+  margin-left: 2%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit {
+  position: absolute;
+  bottom: 0px;
+  height: 45.5%;
+  width: 100%;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__left {
+  position: absolute;
+  top: 0px;
+  left: 2%;
+  height: 70%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__left .benefit__text {
+  height: 30%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__right {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  height: 70%;
+  width: 23%;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__right .benefit__text {
+  height: 30%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__middle {
+  position: absolute;
+  height: 70%;
+  width: 23%;
+  bottom: 10%;
+  left: 39%;
+  display: flex;
+  align-items: center;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__middle .benefit__text {
+  height: 30%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+body .body main .main__order-product-background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__order-product-background .product__container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__order-product-background .product__container .form__button {
+  width: fit-content;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: auto;
+}
+body .body main .main__order-product-background .product__container .form__button button {
+  margin-top: 2%;
+  border: none;
+  outline: none;
+  margin: auto;
+  background-color: #8C561C;
+  color: white;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 70%;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+  position: relative;
+  width: 30%;
+  height: fit-content;
+  background-color: #FEBF27;
+  margin: auto;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form {
+  width: 100%;
+  height: 100%;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td input {
+  width: 90%;
+}
+body .body main .main__order-product-background .product__container .product__product-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__order-product-background .product__container .product__product-img img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__order-product-background .product__container .product-container__title {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+body .body main .main__order-product-background .product__container .product-container__title .title-container {
+  position: relative;
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+}
+body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+  padding-top: 3%;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+body .body main .main__order-product-background .product__container .product-container__discount-title {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height: 70%;
+}
+body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+  position: relative;
+  height: fit-content;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2%;
+}
+body .body main .main__register-product-background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__register-product-background .register__container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body .body main .main__register-product-background .register__container .register-form__title {
+  position: absolute;
+  top: 6%;
+  width: 100%;
+}
+body .body main .main__register-product-background .register__container .register-form__title .form__title {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+body .body main .main__register-product-background .register__container .register__main-register {
+  width: 100%;
+  height: 57%;
+  top: 25%;
+  position: absolute;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container {
+  position: relative;
+  display: flex;
+  top: 0px;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
+  height: 70%;
+  border: 2px #663903 solid;
+  margin-left: 3.5%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container {
+  height: 100%;
+  margin-left: 3%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
+  background-color: #FEBF27;
+  height: 50%;
+  padding-top: 4%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form {
+  height: 100%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table {
+  border-spacing: 0px;
+  height: 65%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr input {
+  width: 100%;
+  padding: 0%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact {
+  position: relative;
+  height: 20%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+  position: absolute;
+  left: 0px;
+  margin-top: 5%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social {
+  position: absolute;
+  right: 0%;
+  text-align: right;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+  cursor: pointer;
+  transform: scale(0.5, 0.5);
+  margin-right: -18%;
+}
+body .body .footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .body .footer .footer__img-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .body .footer .footer__img-background img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .body .footer .footer__text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+body .body .footer .footer__text .footer__container {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+body .body .footer .footer__text .footer__container .container__right-branch {
+  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+}
+body .body .footer .footer__text .footer__container .container__right-branch .title {
+  margin: auto;
+}
+body .body .footer .footer__text .footer__container .container__left-branch {
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+}
+body .body .footer .footer__text .footer__container .container__left-branch .title {
+  margin: auto;
+}
+body .body .footer .footer__text .footer__made-by {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 0px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=Landingpage.css.map */
