@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "UVNMauTim2";
+  src: url(./font/UVNMauTim2.TTF);
+}
+@font-face {
+  font-family: "constanz";
+  src: url(./font/constanz.ttf);
+}
+@font-face {
+  font-family: "SourceSerifPro-Regular";
+  src: url(./font/SourceSerifPro-Regular.ttf);
+}
+@font-face {
+  font-family: "SourceSerifPro-SemiBold";
+  src: url(./font/SourceSerifPro-SemiBold.ttf);
+}
+@font-face {
+  font-family: "SourceSerifPro-BoldItalic";
+  src: url(./font/SourceSerifPro-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "SourceSerifPro-Italic";
+  src: url(./font/SourceSerifPro-Italic.ttf);
+}
+@font-face {
+  font-family: "SourceSerifPro-Bold";
+  src: url(./font/SourceSerifPro-Bold.ttf);
+}
 body {
   position: relative;
   height: 100vh;
@@ -25,6 +53,8 @@ body .body main {
 }
 body .body .body__header {
   width: 100%;
+  color: #663903;
+  font-family: "SourceSerifPro-Bold";
 }
 body .body .body__header .navbar {
   top: 0px;
@@ -34,27 +64,46 @@ body .body .body__header .navbar {
   z-index: 999;
   position: relative;
   height: 60px;
-  background-image: url(./images/Asset\ 11.png);
+  background-image: url(./images/navbar-background.jpg);
+}
+body .body .body__header .navbar .header_nav {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 body .body .body__header .navbar #logo {
   vertical-align: middle;
-  margin-left: 17%;
+  margin-left: 20%;
   margin-top: -0.5%;
   position: relative;
   width: 60%;
 }
 body .body .body__header .navbar #logo a {
   margin-top: 2%;
+  margin-left: -5%;
 }
 body .body .body__header .navbar #logo a img {
   transform: scale(0.7, 0.7);
+  height: 100%;
+  width: 100%;
+}
+body .body .body__header .navbar #logo a a:nth-child(3) {
+  margin-left: 11%;
 }
 body .body .body__header #myNavbar {
   width: 100%;
+  height: 100%;
   margin-left: 0%;
+  z-index: 999999;
+  font-weight: bolder;
 }
 body .body .body__header #myNavbar ul li {
   text-transform: uppercase;
+}
+body .body .body__header #myNavbar ul li a {
+  font-weight: bolder !important;
 }
 body .body main {
   position: relative;
@@ -73,6 +122,78 @@ body .body main .main__banner-background .banner__img img {
   height: 100%;
   width: 100%;
 }
+body .body main .main__banner-background .banner__title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+body .body main .main__banner-background .banner__title .title__container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 60%;
+}
+body .body main .main__banner-background .banner__title .title__container .container__text-title {
+  position: relative;
+  color: black;
+  width: 100%;
+  height: 30%;
+  font-size: 72px;
+}
+body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+  font-size: 6rem;
+  margin-top: 6%;
+  padding-left: 4%;
+  text-align: left;
+  background: linear-gradient(to right, #F78100, #331B00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "UVNMauTim2", "Regular";
+}
+body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-right: 23%;
+  background: linear-gradient(to right, #F78100, #331B00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "UVNMauTim2";
+}
+body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+  font-size: 2.5rem;
+  text-align: right;
+  padding-right: 33%;
+  background: linear-gradient(to right, #F78100, #331B00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "UVNMauTim2";
+}
+body .body main .main__banner-background .banner__title .title__container .text__benefit {
+  position: relative;
+  width: 100%;
+  height: 45%;
+}
+body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list {
+  position: relative;
+  list-style: none;
+  width: 75%;
+  height: 70%;
+  margin-left: 18%;
+  margin-top: 8%;
+  right: 0px;
+}
+body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+  margin-top: 0%;
+  margin-left: -5%;
+  font-family: "SourceSerifPro-Regular";
+  color: #4B1801;
+}
+body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
+  transform: scale(0.5, 0.5);
+}
 body .body main .main__women-issue-background {
   position: relative;
   height: 100%;
@@ -88,29 +209,122 @@ body .body main .main__women-issue-background .issue-background img {
   width: 100%;
 }
 body .body main .main__women-issue-background .issue__title {
-  margin-top: 1%;
+  margin-top: -1%;
   color: #663903;
-  font-weight: 800;
+  font-weight: 550;
   position: absolute;
   top: 0px;
   height: fit-content;
   width: 100%;
 }
 body .body main .main__women-issue-background .issue__title .title__title {
-  width: 50%;
+  width: 40%;
   height: fit-content;
   margin: auto;
 }
 body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   text-align: left;
+  font-family: "UVNMauTim2";
 }
 body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
   font-size: 1.5rem;
   text-align: right;
+  font-family: "constanz";
 }
 body .body main .main__women-issue-background .issue__title .title__title hr {
-  width: 85%;
+  width: 75%;
+  margin: auto;
+  height: 1px;
+  background-color: #663903;
+}
+body .body main .main__women-issue-background .women-issue__issue {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "SourceSerifPro-Bold";
+  font-size: 1.1rem;
+  word-spacing: 0.14rem;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+  position: relative;
+  width: 61%;
+  height: 91%;
+  margin: auto;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue {
+  position: absolute;
+  bottom: 12%;
+  width: 100%;
+  height: 58%;
+  color: #663903;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue {
+  position: absolute;
+  height: 100%;
+  width: 24%;
+  left: 0px;
+  top: 0px;
+  text-align: left;
+  padding-left: 1%;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue .iussue1 {
+  position: relative;
+  width: 100%;
+  height: 24%;
+  padding-top: 7%;
+  text-align: center;
+  margin-left: -10%;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue .iussue2 {
+  position: relative;
+  width: 100%;
+  height: 24%;
+  margin-top: 23%;
+  padding-top: 13%;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue .iussue3 {
+  position: relative;
+  width: 100%;
+  height: 24%;
+  margin-top: 23%;
+  padding-top: 7%;
+  text-align: center;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue {
+  position: absolute;
+  height: 100%;
+  width: 24%;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+  padding-right: 1%;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue .iussue4 {
+  position: relative;
+  width: 100%;
+  height: 24%;
+  padding-top: 7%;
+  margin-left: 10%;
+  text-align: center;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue .iussue5 {
+  position: relative;
+  width: 100%;
+  height: 24%;
+  margin-top: 23%;
+  padding-top: 13%;
+}
+body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue .iussue6 {
+  position: relative;
+  width: 100%;
+  height: 24%;
+  margin-top: 23%;
+  padding-top: 7%;
+  margin-left: 10%;
+  text-align: center;
 }
 body .body main .main__product-background {
   position: relative;
@@ -143,21 +357,21 @@ body .body main .main__product-background .main__product__container .product__ti
   height: 100%;
   margin: auto;
 }
-body .body main .main__product-background .main__product__container .product__title .title hr {
-  height: 20px;
-  font-weight: 500;
-}
 body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   text-align: left;
   width: 100%;
+  font-family: "UVNMauTim2";
 }
 body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
   font-size: 1.5rem;
   text-align: right;
   width: 100%;
+  margin-top: -5%;
+  font-family: "SourceSerifPro-BoldItalic";
 }
 body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+  font-family: "UVNMauTim2";
   font-size: 3.5rem;
 }
 body .body main .main__product-background .main__product__container .product__gredient {
@@ -187,6 +401,8 @@ body .body main .main__product-background .main__product__container .product__gr
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
   margin-top: 22%;
   margin-left: 7%;
+  font-family: "SourceSerifPro-Bold";
+  color: #663903;
 }
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
   position: absolute;
@@ -204,6 +420,8 @@ body .body main .main__product-background .main__product__container .product__gr
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
   margin-top: 2%;
   margin-right: 7%;
+  font-family: "SourceSerifPro-Bold";
+  color: #663903;
 }
 body .body main .main__product-background .main__product__container .gredient__floor {
   position: absolute;
@@ -216,6 +434,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   height: 100%;
   width: 60%;
   margin: auto;
+  font-weight: bold;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name {
   position: absolute;
@@ -259,6 +478,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 100%;
   position: relative;
   text-align: center;
+  color: #663903;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__left-benefit {
   position: absolute;
@@ -268,8 +488,6 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 20%;
   display: flex;
   align-items: center;
-  background-color: #013B22;
-  opacity: 0.5;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__left-benefit .benefit__text {
   margin-top: 35%;
@@ -278,7 +496,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 100%;
   position: relative;
   text-align: center;
-  color: black;
+  color: #663903;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit {
   position: absolute;
@@ -306,7 +524,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 100%;
   position: relative;
   text-align: center;
-  color: black;
+  color: #663903;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__right {
   position: absolute;
@@ -314,7 +532,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   right: 0%;
   height: 70%;
   width: 23%;
-  color: black;
+  color: #663903;
   display: flex;
   align-items: center;
 }
@@ -323,7 +541,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 100%;
   position: relative;
   text-align: center;
-  color: black;
+  color: #663903;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__middle {
   position: absolute;
@@ -339,7 +557,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 100%;
   position: relative;
   text-align: center;
-  color: black;
+  color: #663903;
 }
 body .body main .main__order-product-background {
   position: relative;
@@ -368,7 +586,7 @@ body .body main .main__order-product-background .product__container .form__butto
 }
 body .body main .main__order-product-background .product__container .product-container__main-form {
   position: absolute;
-  top: 30%;
+  top: 40%;
   width: 100%;
   height: 70%;
 }
@@ -418,15 +636,27 @@ body .body main .main__order-product-background .product__container .product-con
   margin: auto;
   text-align: center;
 }
+body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
+  color: #013B22;
+  height: 1px;
+  width: 60%;
+  margin: auto;
+  font-weight: 500;
+  background-color: #663903;
+}
 body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+  position: relative;
   padding-top: 3%;
   height: 100%;
   width: 100%;
   vertical-align: middle;
+  font-size: 3.5rem;
+  font-family: "UVNMauTim2";
+  color: #663903;
 }
 body .body main .main__order-product-background .product__container .product-container__discount-title {
   position: absolute;
-  top: 12%;
+  top: 20%;
   width: 100%;
   height: 70%;
 }
@@ -437,6 +667,11 @@ body .body main .main__order-product-background .product__container .product-con
   margin: auto;
   text-align: center;
   padding-top: 2%;
+  font-family: "SourceSerifPro-BoldItalic";
+  color: #663903;
+}
+body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title span span {
+  font-size: 1.5rem;
 }
 body .body main .main__register-product-background {
   position: relative;
@@ -450,15 +685,20 @@ body .body main .main__register-product-background .register__container {
 }
 body .body main .main__register-product-background .register__container .register-form__title {
   position: absolute;
-  top: 6%;
+  top: 15%;
   width: 100%;
 }
 body .body main .main__register-product-background .register__container .register-form__title .form__title {
   width: 60%;
   margin: auto;
   text-align: center;
+  color: #663903;
+  font-family: "SourceSerifPro-Bold";
+  font-size: 1.2rem;
 }
 body .body main .main__register-product-background .register__container .register__main-register {
+  color: #663903;
+  font-family: "SourceSerifPro-Bold";
   width: 100%;
   height: 57%;
   top: 25%;
@@ -536,10 +776,12 @@ body .body .footer .footer__img-background img {
   height: 100%;
 }
 body .body .footer .footer__text {
+  color: #663903;
   width: 100%;
-  height: 100%;
+  height: 90%;
   position: absolute;
-  top: 0px;
+  top: 10%;
+  font-family: "SourceSerifPro-Bold";
 }
 body .body .footer .footer__text .footer__container {
   height: 90%;
@@ -566,11 +808,10 @@ body .body .footer .footer__text .footer__container .container__left-branch .tit
 }
 body .body .footer .footer__text .footer__made-by {
   position: relative;
-  bottom: 0px;
+  bottom: 6%;
   left: 0px;
   width: 70%;
   text-align: center;
-  margin-bottom: 0px;
   margin: auto;
 }
 
