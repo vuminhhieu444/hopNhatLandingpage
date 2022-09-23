@@ -26,6 +26,14 @@
   font-family: "SourceSerifPro-Bold";
   src: url(./font/SourceSerifPro-Bold.ttf);
 }
+@font-face {
+  font-family: "constani";
+  src: url(./font/constani.ttf);
+}
+@font-face {
+  font-family: "constanb";
+  src: url(./font/constanb.ttf);
+}
 body {
   position: relative;
   height: 100vh;
@@ -66,6 +74,24 @@ body .body .body__header .navbar {
   height: 60px;
   background-image: url(./images/navbar-background.jpg);
 }
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header .navbar {
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar {
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar {
+    height: 30px;
+  }
+}
+body .body .body__header .navbar .nav-link {
+  color: #4B1801;
+}
 body .body .body__header .navbar .header_nav {
   height: 100%;
   width: 100%;
@@ -80,6 +106,36 @@ body .body .body__header .navbar #logo {
   position: relative;
   width: 60%;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .body__header .navbar #logo {
+    margin-top: -7.5%;
+    margin-left: 10%;
+    width: 36%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header .navbar #logo {
+    display: flex;
+    margin-left: -2%;
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar #logo {
+    display: flex;
+    margin-left: -4%;
+    margin-top: -21.5%;
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar #logo {
+    display: flex;
+    margin-left: -4%;
+    margin-top: -20.5%;
+    padding: 0px;
+  }
+}
 body .body .body__header .navbar #logo a {
   margin-top: 2%;
   margin-left: -5%;
@@ -89,8 +145,103 @@ body .body .body__header .navbar #logo a img {
   height: 100%;
   width: 100%;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .body__header .navbar #logo a img {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header .navbar #logo a img {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar #logo a img {
+    transform: scale(0.3, 0.3);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar #logo a img {
+    transform: scale(0.3, 0.3);
+  }
+}
 body .body .body__header .navbar #logo a a:nth-child(3) {
   margin-left: 11%;
+}
+body .body .body__header .navbar #logo a a:nth-child(3) img:first-child {
+  margin-left: -10%;
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header .navbar #logo a:first-child img:first-child {
+    transform: scale(0.5, 0.2);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar #logo a:first-child img:first-child {
+    transform: scale(0.3, 0.1);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar #logo a:first-child img:first-child {
+    transform: scale(0.3, 0.1);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar #logo a:nth-child(2) {
+    margin-left: -18%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar #logo a:nth-child(2) {
+    margin-left: -18%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header .navbar #logo a:nth-child(2) img:first-child {
+    transform: scale(0.5, 0.2);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar #logo a:nth-child(2) img:first-child {
+    transform: scale(0.3, 0.1);
+    margin-left: -30%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar #logo a:nth-child(2) img:first-child {
+    transform: scale(0.3, 0.1);
+    margin-left: -30%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header .navbar #logo a:nth-child(3) img:first-child {
+    margin-left: -21%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar #logo a:nth-child(3) img:first-child {
+    margin-left: -36%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar #logo a:nth-child(3) img:first-child {
+    margin-left: -36%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .body__header .navbar {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header .navbar {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header .navbar {
+    display: flex;
+  }
 }
 body .body .body__header #myNavbar {
   width: 100%;
@@ -99,11 +250,99 @@ body .body .body__header #myNavbar {
   z-index: 999999;
   font-weight: bolder;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .body__header #myNavbar {
+    width: 38%;
+    font-size: 0.6rem;
+    margin-top: -7%;
+  }
+  body .body .body__header #myNavbar img {
+    transform: scale(0.4, 0.4);
+  }
+  body .body .body__header #myNavbar .navbar-nav {
+    flex-direction: row;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header #myNavbar {
+    width: 38%;
+    font-size: 0.6rem;
+    margin-top: -21%;
+    margin-left: -7%;
+    height: fit-content;
+  }
+  body .body .body__header #myNavbar img {
+    transform: scale(0.4, 0.4);
+  }
+  body .body .body__header #myNavbar .navbar-nav {
+    flex-direction: row;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header #myNavbar {
+    height: fit-content;
+    width: 38%;
+    font-size: 0.6rem;
+    margin-top: -19%;
+  }
+  body .body .body__header #myNavbar img {
+    transform: scale(0.4, 0.4);
+  }
+  body .body .body__header #myNavbar .navbar-nav {
+    flex-direction: row;
+    width: fit-content;
+  }
+}
 body .body .body__header #myNavbar ul li {
   text-transform: uppercase;
 }
 body .body .body__header #myNavbar ul li a {
   font-weight: bolder !important;
+}
+body .body .body__header #myNavbar ul li:not(hover) {
+  text-transform: uppercase;
+  color: #4B1801 !important;
+}
+body .body .body__header #myNavbar ul li:not(hover) a {
+  font-weight: bolder !important;
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .body__header #myNavbar ul {
+    flex-direction: row;
+  }
+  body .body .body__header #myNavbar ul li {
+    width: fit-content;
+    font-size: 0.54rem;
+  }
+  body .body .body__header #myNavbar ul li a {
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .body__header #myNavbar ul {
+    flex-direction: row;
+  }
+  body .body .body__header #myNavbar ul li {
+    width: fit-content;
+    font-size: 0.3rem;
+  }
+  body .body .body__header #myNavbar ul li a {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .body__header #myNavbar ul {
+    flex-direction: row;
+  }
+  body .body .body__header #myNavbar ul li {
+    width: fit-content;
+    font-size: 0.26rem;
+  }
+  body .body .body__header #myNavbar ul li a {
+    width: 100%;
+  }
 }
 body .body main {
   position: relative;
@@ -131,8 +370,8 @@ body .body main .main__banner-background .banner__title {
 }
 body .body main .main__banner-background .banner__title .title__container {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -2%;
+  right: 5%;
   height: 100%;
   width: 60%;
 }
@@ -144,7 +383,7 @@ body .body main .main__banner-background .banner__title .title__container .conta
   font-size: 72px;
 }
 body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
-  font-size: 6rem;
+  font-size: 6.65rem;
   margin-top: 6%;
   padding-left: 4%;
   text-align: left;
@@ -153,28 +392,168 @@ body .body main .main__banner-background .banner__title .title__container .conta
   -webkit-text-fill-color: transparent;
   font-family: "UVNMauTim2", "Regular";
 }
+@media only screen and (min-width: 1408px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 5.85rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 4.3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 4.1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 3.18rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 1.76rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__first-line {
+    font-size: 1.33rem;
+  }
+}
 body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
-  font-size: 2.5rem;
+  margin-top: -2.5%;
+  font-size: 3rem;
   text-align: center;
-  padding-right: 23%;
+  padding-right: 13%;
   background: linear-gradient(to right, #F78100, #331B00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "UVNMauTim2";
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 2rem;
+    padding-right: 10%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 2rem;
+    padding-right: 0.3%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 1rem;
+    padding-right: 0.2%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 0.9rem;
+    padding-right: 0.2%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__second-line {
+    font-size: 0.8rem;
+    padding-right: 0.2%;
+  }
+}
 body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
-  font-size: 2.5rem;
+  margin-top: -2%;
+  font-size: 3rem;
   text-align: right;
-  padding-right: 33%;
+  padding-right: 21%;
   background: linear-gradient(to right, #F78100, #331B00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "UVNMauTim2";
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 2rem;
+    padding-right: 16%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 2rem;
+    padding-right: 0.3%;
+    margin-top: -3.5%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 1rem;
+    padding-right: 5%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 0.9rem;
+    padding-right: 5%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__banner-background .banner__title .title__container .container__text-title .text-title__third-line {
+    font-size: 0.8rem;
+    padding-right: 5%;
+  }
 }
 body .body main .main__banner-background .banner__title .title__container .text__benefit {
   position: relative;
-  width: 100%;
+  width: 105%;
   height: 45%;
+}
+@media only screen and (min-width: 1408px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit {
+    margin-top: 7%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit {
+    width: 111%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit {
+    width: 119%;
+    margin-left: -10%;
+    font-size: 0.8rem;
+  }
 }
 body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list {
   position: relative;
@@ -182,17 +561,85 @@ body .body main .main__banner-background .banner__title .title__container .text_
   width: 75%;
   height: 70%;
   margin-left: 18%;
-  margin-top: 8%;
+  margin-top: 5%;
   right: 0px;
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list {
+    margin-top: 3%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list {
+    margin-top: 3%;
+  }
 }
 body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
   margin-top: 0%;
   margin-left: -5%;
   font-family: "SourceSerifPro-Regular";
   color: #4B1801;
+  font-weight: bolder;
+  font-size: 0.9rem;
 }
 body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
   transform: scale(0.5, 0.5);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.6rem;
+  }
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
+    transform: scale(0.4, 0.4);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.5rem;
+  }
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
+    transform: scale(0.4, 0.4);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.25rem;
+    margin-left: -20%;
+    height: 23%;
+  }
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
+    transform: scale(0.22, 0.22);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.25rem;
+    margin-left: -30%;
+    height: 23%;
+  }
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
+    transform: scale(0.2, 0.2);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li {
+    font-size: 0.21rem;
+    margin-left: -30%;
+    height: 23%;
+  }
+  body .body main .main__banner-background .banner__title .title__container .text__benefit .benefit__list li img {
+    transform: scale(0.2, 0.2);
+  }
 }
 body .body main .main__women-issue-background {
   position: relative;
@@ -218,25 +665,111 @@ body .body main .main__women-issue-background .issue__title {
   width: 100%;
 }
 body .body main .main__women-issue-background .issue__title .title__title {
-  width: 40%;
+  width: 58.5%;
   height: fit-content;
   margin: auto;
 }
 body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
-  font-size: 4.5rem;
+  font-size: 5rem;
   text-align: left;
   font-family: "UVNMauTim2";
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__bigtitle {
+    font-size: 1rem;
+  }
+}
 body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: right;
   font-family: "constanz";
+  margin-top: -1%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 1.35rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__women-issue-background .issue__title .title__title .title__subtitle {
+    font-size: 0.42rem;
+  }
 }
 body .body main .main__women-issue-background .issue__title .title__title hr {
   width: 75%;
   margin: auto;
   height: 1px;
   background-color: #663903;
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__women-issue-background .issue__title .title__title hr {
+    height: 0.5px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__women-issue-background .issue__title .title__title hr {
+    height: 0.5px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__women-issue-background .issue__title .title__title hr {
+    height: 0.3px;
+  }
 }
 body .body main .main__women-issue-background .women-issue__issue {
   position: absolute;
@@ -248,11 +781,76 @@ body .body main .main__women-issue-background .women-issue__issue {
   font-size: 1.1rem;
   word-spacing: 0.14rem;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__women-issue-background .women-issue__issue {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__women-issue-background .women-issue__issue {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__women-issue-background .women-issue__issue {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__women-issue-background .women-issue__issue {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__women-issue-background .women-issue__issue {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__women-issue-background .women-issue__issue {
+    font-size: 0.3rem;
+  }
+}
 body .body main .main__women-issue-background .women-issue__issue .issue_issue {
   position: relative;
   width: 61%;
   height: 91%;
   margin: auto;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.26rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__women-issue-background .women-issue__issue .issue_issue {
+    font-size: 0.21rem;
+  }
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue {
   position: absolute;
@@ -271,27 +869,30 @@ body .body main .main__women-issue-background .women-issue__issue .issue_issue .
   padding-left: 1%;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue .iussue1 {
-  position: relative;
   width: 100%;
   height: 24%;
-  padding-top: 7%;
   text-align: center;
-  margin-left: -10%;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue .iussue2 {
-  position: relative;
   width: 100%;
   height: 24%;
-  margin-top: 23%;
-  padding-top: 13%;
+  top: 38%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__left-issue .iussue3 {
-  position: relative;
-  width: 100%;
+  width: 105%;
   height: 24%;
-  margin-top: 23%;
-  padding-top: 7%;
+  top: 76%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue {
   position: absolute;
@@ -303,28 +904,29 @@ body .body main .main__women-issue-background .women-issue__issue .issue_issue .
   padding-right: 1%;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue .iussue4 {
-  position: relative;
   width: 100%;
   height: 24%;
-  padding-top: 7%;
-  margin-left: 10%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue .iussue5 {
   position: relative;
   width: 100%;
   height: 24%;
-  margin-top: 23%;
-  padding-top: 13%;
+  top: 38%;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 body .body main .main__women-issue-background .women-issue__issue .issue_issue .issue__group-issue .group-issue__right-issue .iussue6 {
-  position: relative;
   width: 100%;
   height: 24%;
-  margin-top: 23%;
-  padding-top: 7%;
-  margin-left: 10%;
-  text-align: center;
+  top: 76%;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 body .body main .main__product-background {
   position: relative;
@@ -352,10 +954,47 @@ body .body main .main__product-background .main__product__container .product__ti
   width: 100%;
   height: fit-content;
 }
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__title {
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__title {
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__title {
+    top: 0%;
+  }
+}
 body .body main .main__product-background .main__product__container .product__title .title {
-  width: 40%;
+  width: 58%;
   height: 100%;
   margin: auto;
+}
+body .body main .main__product-background .main__product__container .product__title .title hr {
+  height: 1px;
+  width: 75%;
+  margin: auto;
+  font-weight: 500;
+  background: #663903;
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__title .title hr {
+    height: 0px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__title .title hr {
+    height: 0px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__title .title hr {
+    height: 0px;
+  }
 }
 body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
   font-size: 4.5rem;
@@ -363,16 +1002,124 @@ body .body main .main__product-background .main__product__container .product__ti
   width: 100%;
   font-family: "UVNMauTim2";
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__bigtitle {
+    font-size: 1.2rem;
+  }
+}
 body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: right;
   width: 100%;
   margin-top: -5%;
   font-family: "SourceSerifPro-BoldItalic";
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 0.53rem;
+    margin-top: -9%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 0.5rem;
+    margin-top: -9%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle {
+    font-size: 0.35rem;
+    margin-top: -9%;
+  }
+}
 body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
   font-family: "UVNMauTim2";
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__title .title .title__subtitle span {
+    font-size: 1.2rem;
+  }
 }
 body .body main .main__product-background .main__product__container .product__gredient {
   position: absolute;
@@ -390,44 +1137,251 @@ body .body main .main__product-background .main__product__container .product__gr
   position: absolute;
   height: 50%;
   width: 36%;
-  top: 0px;
+  top: -1%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient {
+    font-size: 0.7rem;
+  }
 }
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
   position: absolute;
   top: 20%;
   color: #013B22;
   font-weight: 800;
+  margin-left: 7%;
+  font-family: "SourceSerifPro-Bold";
+  font-size: 1.2rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
+    font-size: 0.7rem;
+    margin-top: -2%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
+    font-size: 0.4rem;
+    margin-top: -4%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
+    font-size: 0.4rem;
+    margin-top: -4%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__title {
+    font-size: 0.35rem;
+    margin-top: -4%;
+  }
 }
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
   margin-top: 22%;
   margin-left: 7%;
   font-family: "SourceSerifPro-Bold";
   color: #663903;
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
+    font-size: 0.25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__left-gredient .left-gredient__explain {
+    font-size: 0.22rem;
+  }
 }
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
   position: absolute;
   height: 50%;
   width: 36%;
-  top: 0px;
+  top: -1%;
   right: 0px;
   text-align: right;
   font-size: 1.1rem;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+    font-size: 0.55rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient {
+    font-size: 0.5rem;
+  }
+}
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
   color: #013B22;
   font-weight: 800;
+  margin-right: 8%;
+  font-family: "SourceSerifPro-Bold";
+  font-size: 1.2rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
+    font-size: 0.7rem;
+    margin-top: -5%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
+    font-size: 0.4rem;
+    margin-top: -5%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
+    font-size: 0.4rem;
+    margin-top: -5%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__title {
+    font-size: 0.35rem;
+    margin-top: -5%;
+  }
 }
 body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
   margin-top: 2%;
   margin-right: 7%;
   font-family: "SourceSerifPro-Bold";
   color: #663903;
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
+    font-size: 0.25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .product__gredient .gredient__gredient .product__right-gredient .right-gredient__explain {
+    font-size: 0.23rem;
+  }
 }
 body .body main .main__product-background .main__product__container .gredient__floor {
   position: absolute;
   bottom: 0px;
   height: 48%;
   width: 100%;
+  font-family: "SourceSerifPro-Bold";
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .gredient__floor {
+    font-size: 0.25rem;
+  }
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container {
   position: relative;
@@ -435,6 +1389,60 @@ body .body main .main__product-background .main__product__container .gredient__f
   width: 60%;
   margin: auto;
   font-weight: bold;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original {
+  width: 100%;
+  height: 13%;
+  position: absolute;
+  top: 25%;
+}
+body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #663903;
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 0.4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .container__original .original__text {
+    font-size: 0.27rem;
+  }
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name {
   position: absolute;
@@ -456,16 +1464,91 @@ body .body main .main__product-background .main__product__container .gredient__f
   height: 50%;
   color: #013B22;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.28rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__vn-name {
+    font-size: 0.25rem;
+  }
+}
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
-  padding-top: 2%;
+  padding-top: 1%;
   position: relative;
   width: 100%;
   height: 50%;
   color: #013B22;
+  font-size: 1.4rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 1.2rem;
+    padding-top: 0.8%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 1rem;
+    padding-top: 0.5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 1rem;
+    padding-top: 0.8%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 0.8rem;
+    padding-top: 0.8%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 0.4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__product-name .product-name__text .product-name__en-name {
+    font-size: 0.27rem;
+  }
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__right-benefit {
   position: absolute;
-  top: 0px;
+  top: -1%;
   left: 2%;
   height: 32%;
   width: 20%;
@@ -482,7 +1565,7 @@ body .body main .main__product-background .main__product__container .gredient__f
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .first-floor-benefit__left-benefit {
   position: absolute;
-  top: 0px;
+  top: -1%;
   right: 2%;
   height: 32%;
   width: 20%;
@@ -512,7 +1595,7 @@ body .body main .main__product-background .main__product__container .gredient__f
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__left {
   position: absolute;
-  top: 0px;
+  top: -2%;
   left: 2%;
   height: 70%;
   width: 23%;
@@ -520,7 +1603,7 @@ body .body main .main__product-background .main__product__container .gredient__f
   align-items: center;
 }
 body .body main .main__product-background .main__product__container .gredient__floor .floor__container .product__second-floor-benefit .second-floor__container .floor-benefit__left .benefit__text {
-  height: 30%;
+  height: 41%;
   width: 100%;
   position: relative;
   text-align: center;
@@ -583,35 +1666,315 @@ body .body main .main__order-product-background .product__container .form__butto
   margin: auto;
   background-color: #8C561C;
   color: white;
+  font-family: "SourceSerifPro-Bold";
+  height: 2rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.65rem;
+    height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.65rem;
+    height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.65rem;
+    height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.65rem;
+    height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.2rem;
+    height: 0.5rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.3rem;
+    height: 0.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .form__button button {
+    font-size: 0.3rem;
+    height: 0.5rem;
+  }
 }
 body .body main .main__order-product-background .product__container .product-container__main-form {
-  position: absolute;
-  top: 40%;
+  position: relative;
+  margin-top: 1%;
   width: 100%;
-  height: 70%;
+  height: fit-content;
+  font-family: "SourceSerifPro-Bold";
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form {
+    margin-top: -2%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form {
+    margin-top: -2%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form {
+    margin-top: -2%;
+  }
 }
 body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
   position: relative;
-  width: 30%;
+  width: 40%;
   height: fit-content;
   background-color: #FEBF27;
   margin: auto;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    margin-top: 5%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    margin-top: 5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    width: 60%;
+    height: fit-content;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    font-size: 0.6rem;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    font-size: 0.3rem;
+    width: 53%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    font-size: 0.3rem;
+    width: 53%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
+    font-size: 0.3rem;
+    width: 53%;
+  }
+}
 body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form {
+  padding-top: 2%;
   width: 100%;
   height: 100%;
 }
 body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
   width: 100%;
-  height: 30%;
+  height: 25%;
   margin: auto;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 10%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 0%;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 0%;
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 0%;
+    font-size: 0.2rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 0%;
+    font-size: 0.2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
+    height: 0%;
+    font-size: 0.2rem;
+  }
+}
 body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-  padding-left: 5%;
-  padding-top: 2%;
+  padding-top: 0.5%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 0.2%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 1%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 0.5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 0.4%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 0.1%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 0.1%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
+    padding-top: 0.1%;
+  }
 }
 body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td input {
-  width: 90%;
+  width: 95%;
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+  font-family: "SourceSerifPro-Bold";
+  color: #663903;
+  width: -20%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.24rem !important;
+  }
+}
+body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr input {
+  width: 100%;
+  padding: 0%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.35rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
 }
 body .body main .main__order-product-background .product__container .product__product-img {
   position: relative;
@@ -627,7 +1990,7 @@ body .body main .main__order-product-background .product__container .product-con
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 100%;
+  height: fit-content;
 }
 body .body main .main__order-product-background .product__container .product-container__title .title-container {
   position: relative;
@@ -639,26 +2002,84 @@ body .body main .main__order-product-background .product__container .product-con
 body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
   color: #013B22;
   height: 1px;
-  width: 60%;
+  width: 80%;
   margin: auto;
   font-weight: 500;
   background-color: #663903;
+  margin-top: 0.5%;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
+    width: 63%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
+    height: 0px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
+    height: 0px;
+    margin-top: -2%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
+    height: 0px;
+    margin-top: -2%;
+  }
 }
 body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
   position: relative;
-  padding-top: 3%;
+  padding-top: 0%;
   height: 100%;
   width: 100%;
   vertical-align: middle;
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   font-family: "UVNMauTim2";
   color: #663903;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
+    font-size: 1.2rem;
+  }
 }
 body .body main .main__order-product-background .product__container .product-container__discount-title {
   position: absolute;
   top: 20%;
   width: 100%;
-  height: 70%;
+  height: fit-content;
 }
 body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
   position: relative;
@@ -666,26 +2087,171 @@ body .body main .main__order-product-background .product__container .product-con
   width: 70%;
   margin: auto;
   text-align: center;
-  padding-top: 2%;
+  padding-top: 3.5%;
   font-family: "SourceSerifPro-BoldItalic";
   color: #663903;
 }
-body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title span span {
-  font-size: 1.5rem;
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    margin-top: -3.5%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    margin-top: -4.5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    margin-top: -4.5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    padding-top: 0.7%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    height: 50%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    padding-top: 0%;
+    margin-top: -2%;
+    height: 50%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
+    padding-top: 0%;
+    margin-top: -2%;
+    height: 50%;
+  }
+}
+body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+  font-size: 1.7rem;
+  font-family: "constani";
+  font-weight: 600;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    margin-top: 5%;
+    font-size: 0.4rem;
+    line-height: 0.2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
+    margin-top: 6%;
+    font-size: 0.4rem;
+    line-height: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p {
+    line-height: 0.1rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p {
+    line-height: 0.1rem;
+  }
+}
+body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "SourceSerifPro-BoldItalic";
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+    margin-top: 5%;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+    margin-top: 5%;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+    margin-top: 5%;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
+    margin-top: 5%;
+    font-size: 0.7rem;
+  }
 }
 body .body main .main__register-product-background {
   position: relative;
   height: 100%;
   width: 100%;
+  margin-top: -7.1px;
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background {
+    margin-top: -6px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background {
+    margin-top: -2px;
+  }
 }
 body .body main .main__register-product-background .register__container {
   position: relative;
   height: 100%;
   width: 100%;
 }
+body .body main .main__register-product-background .register__container img:nth-child(1) {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
 body .body main .main__register-product-background .register__container .register-form__title {
   position: absolute;
-  top: 15%;
+  top: 8%;
   width: 100%;
 }
 body .body main .main__register-product-background .register__container .register-form__title .form__title {
@@ -693,16 +2259,187 @@ body .body main .main__register-product-background .register__container .registe
   margin: auto;
   text-align: center;
   color: #663903;
+  font-family: "SourceSerifPro-BoldItalic";
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+  font-family: "UVNMauTim2";
+  font-size: 4.5rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 3.1rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 1rem;
+    letter-spacing: 0px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title span {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 1.3rem;
+    top: 5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 1.2rem;
+    width: 72%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 0.6rem;
+    width: 84%;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 0.5rem;
+    width: 66%;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register-form__title .form__title {
+    font-size: 0.4rem;
+    width: 69%;
+    letter-spacing: 1px;
+  }
+}
+body .body main .main__register-product-background .register__container .register-form__bottom-title {
+  position: absolute;
+  bottom: 11%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+body .body main .main__register-product-background .register__container .register-form__bottom-title .form__title {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  color: #663903;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
   font-family: "SourceSerifPro-Bold";
-  font-size: 1.2rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title .form__title {
+    letter-spacing: 0.5px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title .form__title {
+    letter-spacing: 0.5px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title .form__title {
+    letter-spacing: 0.5px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    bottom: 7%;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    font-size: 1.1rem;
+    bottom: 9%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    font-size: 0.9rem;
+    bottom: 3%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    font-size: 0.5rem;
+    bottom: 6%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    font-size: 0.45rem;
+    bottom: 3%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register-form__bottom-title {
+    font-size: 0.4rem;
+    bottom: 3%;
+  }
 }
 body .body main .main__register-product-background .register__container .register__main-register {
   color: #663903;
   font-family: "SourceSerifPro-Bold";
   width: 100%;
   height: 57%;
-  top: 25%;
+  top: 28%;
   position: absolute;
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register {
+    height: 48%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register {
+    height: 48%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register {
+    height: 46%;
+  }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container {
   position: relative;
@@ -711,11 +2448,57 @@ body .body main .main__register-product-background .register__container .registe
   width: 60%;
   height: 100%;
   margin: auto;
+  justify-content: space-around;
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
-  height: 70%;
+  height: 91%;
   border: 2px #663903 solid;
   margin-left: 3.5%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
+    height: 91%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
+    height: 108%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
+    height: 116%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
+    height: 120%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__main--container__frame {
+    height: 125%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container {
+    width: 95%;
+  }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container {
   height: 100%;
@@ -723,42 +2506,389 @@ body .body main .main__register-product-background .register__container .registe
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
   background-color: #FEBF27;
-  height: 50%;
-  padding-top: 4%;
+  height: 75%;
+  padding-top: 2%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
+    padding-top: 2%;
+    height: 90%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
+    height: 105%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
+    height: 110%;
+  }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
   margin-bottom: 1.5rem;
   text-align: center;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form {
   height: 100%;
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button {
+  height: fit-content;
+  position: relative;
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button {
+    height: 8% !important;
+    bottom: 11%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button {
+    height: 8% !important;
+  }
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button {
+  height: 100%;
+  width: fit-content;
+  margin: auto;
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button {
+    margin-top: -9%;
+  }
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+  position: relative;
+  outline: none;
+  border: none;
+  margin: auto;
+  background-color: #8C561C;
+  color: white;
+  font-family: "SourceSerifPro-Bold";
+  height: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.3rem;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button button {
+    font-size: 0.3rem;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button {
+    height: 13%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button {
+    height: 13%;
+  }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table {
   border-spacing: 0px;
   height: 65%;
 }
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table {
+    height: 55%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table {
+    height: 55%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table {
+    height: 55%;
+  }
+}
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr input {
   width: 100%;
   padding: 0%;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 0.27rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 0.27rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr {
+    font-size: 0.27rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form table tr td:nth-child(1) {
+    font-size: 0.3rem;
+  }
+}
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact {
   position: relative;
   height: 20%;
+  justify-content: space-between;
+  display: flex;
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
-  position: absolute;
   left: 0px;
   margin-top: 5%;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    font-size: 0.3rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    margin-top: 3%;
+    font-size: 0.3rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
+    justify-content: space-between;
+    margin-top: 3%;
+    font-size: 0.3rem;
+  }
+}
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social {
-  position: absolute;
-  right: 0%;
+  margin-left: 14%;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
   cursor: pointer;
+  transform: scale(0.33, 0.55);
+  margin-right: -15%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.33, 0.55);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.4, 0.55);
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.35, 0.45);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.35, 0.45);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.35, 0.45);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.35, 0.45);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img {
+    transform: scale(0.35, 0.45);
+  }
+}
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+  cursor: pointer;
   transform: scale(0.5, 0.5);
-  margin-right: -18%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.45, 0.45);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.3, 0.3);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.4, 0.45);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.4, 0.45);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.4, 0.45);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social img:nth-child(2) {
+    transform: scale(0.4, 0.45);
+  }
 }
 body .body .footer {
   position: relative;
@@ -790,21 +2920,195 @@ body .body .footer .footer__text .footer__container {
   margin: auto;
   position: relative;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body .footer .footer__text .footer__container {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body .footer .footer__text .footer__container {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body .footer .footer__text .footer__container {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__container {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__container {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .footer .footer__text .footer__container {
+    font-size: 0.3rem;
+  }
+}
 body .body .footer .footer__text .footer__container .container__right-branch {
   margin: auto;
   width: 100%;
   margin-top: 0px;
+  font-weight: bolder;
 }
 body .body .footer .footer__text .footer__container .container__right-branch .title {
   margin: auto;
+  font-size: 1.3rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 0.55rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 0.4rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .title {
+    font-size: 0.35rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.28rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .footer .footer__text .footer__container .container__right-branch .branch__contact {
+    font-size: 0.22rem;
+  }
 }
 body .body .footer .footer__text .footer__container .container__left-branch {
   width: 100%;
   margin: auto;
   margin-top: 0px;
+  font-weight: bolder;
 }
 body .body .footer .footer__text .footer__container .container__left-branch .title {
   margin: auto;
+  font-size: 1.3rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 0.55rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 0.4rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .title {
+    font-size: 0.35rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.28rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .footer .footer__text .footer__container .container__left-branch .branch__contact {
+    font-size: 0.22rem;
+  }
 }
 body .body .footer .footer__text .footer__made-by {
   position: relative;
@@ -813,6 +3117,43 @@ body .body .footer .footer__text .footer__made-by {
   width: 70%;
   text-align: center;
   margin: auto;
+  font-weight: 100;
+  color: #644f36;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body .footer .footer__text .footer__made-by {
+    font-size: 0.3rem;
+  }
 }
 
 /*# sourceMappingURL=Landingpage.css.map */
