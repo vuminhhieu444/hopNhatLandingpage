@@ -584,6 +584,25 @@
                                     }
                                 }
                             }
+                            .container__shop-button {
+                                position: absolute;
+                                right: 5%;
+                                background-color: white;
+                                height: 15%;
+                                width: 50%;
+                                bottom: 10%;
+                                border-radius: 75px 75px 75px 75px;
+                                overflow: hidden;
+                                transform: scale(0.9, 0.9);
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    cursor: pointer;
+                                    position: absolute;
+                                    top: 0px;
+                                    right: 0px;
+                                }
+                            }
                         }
                     }
                 }
@@ -2179,7 +2198,7 @@
                                                 justify-content: space-between;
                                             }
                                             @include responsive_375 {
-                                                margin-top: 3%;
+                                                margin-top: 4%;
                                                 font-size: 0.3rem;
                                                 justify-content: space-between;
                                             }
@@ -2194,55 +2213,61 @@
                                             text-align: right;
                                             display: flex;
                                             justify-content: space-between;
-                                            img {
-                                                cursor: pointer;
-                                                transform: scale(0.33, 0.55);
-                                                margin-right: -15%;
-                                                @include responsive_1200 {
-                                                    transform: scale(0.33, 0.55);
+                                            a {
+                                                height: 100%;
+                                                width: 100%;
+                                                img {
+                                                    cursor: pointer;
+                                                    transform: scale(0.5, 0.55);
+                                                    margin-right: -15%;
+                                                    @include responsive_1200 {
+                                                        transform: scale(0.33, 0.55);
+                                                    }
+                                                    @include responsive_1024 {
+                                                        transform: scale(0.4, 0.55);
+                                                    }
+                                                    @include responsive_992 {
+                                                        transform: scale(0.35, 0.45);
+                                                    }
+                                                    @include responsive_768 {
+                                                        transform: scale(0.35, 0.45);
+                                                    }
+                                                    @include responsive_425 {
+                                                        transform: scale(0.35, 0.45);
+                                                    }
+                                                    @include responsive_375 {
+                                                        transform: scale(0.35, 0.45);
+                                                        margin-top: -30%;
+                                                    }
+                                                    @include responsive_320 {
+                                                        transform: scale(0.35, 0.45);
+                                                        margin-top: -70%;
+                                                    }
                                                 }
-                                                @include responsive_1024 {
-                                                    transform: scale(0.4, 0.55);
-                                                }
-                                                @include responsive_992 {
-                                                    transform: scale(0.35, 0.45);
-                                                }
-                                                @include responsive_768 {
-                                                    transform: scale(0.35, 0.45);
-                                                }
-                                                @include responsive_425 {
-                                                    transform: scale(0.35, 0.45);
-                                                }
-                                                @include responsive_375 {
-                                                    transform: scale(0.35, 0.45);
-                                                }
-                                                @include responsive_320 {
-                                                    transform: scale(0.35, 0.45);
-                                                }
-                                            }
-                                            & img:nth-child(2) {
-                                                cursor: pointer;
-                                                transform: scale(0.5, 0.5);
-                                                @include responsive_1200 {
-                                                    transform: scale(0.45, 0.45);
-                                                }
-                                                @include responsive_1024 {
+                                                & img:nth-child(2) {
+                                                    cursor: pointer;
                                                     transform: scale(0.5, 0.5);
-                                                }
-                                                @include responsive_992 {
-                                                    transform: scale(0.3, 0.3);
-                                                }
-                                                @include responsive_768 {
-                                                    transform: scale(0.4, 0.45);
-                                                }
-                                                @include responsive_425 {
-                                                    transform: scale(0.4, 0.45);
-                                                }
-                                                @include responsive_375 {
-                                                    transform: scale(0.4, 0.45);
-                                                }
-                                                @include responsive_320 {
-                                                    transform: scale(0.4, 0.45);
+                                                    @include responsive_1200 {
+                                                        transform: scale(0.45, 0.45);
+                                                    }
+                                                    @include responsive_1024 {
+                                                        transform: scale(0.5, 0.5);
+                                                    }
+                                                    @include responsive_992 {
+                                                        transform: scale(0.3, 0.3);
+                                                    }
+                                                    @include responsive_768 {
+                                                        transform: scale(0.4, 0.45);
+                                                    }
+                                                    @include responsive_425 {
+                                                        transform: scale(0.4, 0.45);
+                                                    }
+                                                    @include responsive_375 {
+                                                        transform: scale(0.4, 0.45);
+                                                    }
+                                                    @include responsive_320 {
+                                                        transform: scale(0.4, 0.45);
+                                                    }
                                                 }
                                             }
                                         }
