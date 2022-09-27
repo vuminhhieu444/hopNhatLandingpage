@@ -300,6 +300,7 @@ body .body .body__header #myNavbar ul li {
 }
 body .body .body__header #myNavbar ul li a {
   font-weight: bolder !important;
+  font-size: 1.2em;
 }
 body .body .body__header #myNavbar ul li:not(hover) {
   text-transform: uppercase;
@@ -647,7 +648,7 @@ body .body main .main__banner-background .banner__title .title__container .conta
   background-color: white;
   height: 15%;
   width: 50%;
-  bottom: 10%;
+  bottom: 15%;
   border-radius: 75px 75px 75px 75px;
   overflow: hidden;
   transform: scale(0.9, 0.9);
@@ -956,6 +957,15 @@ body .body main .main__product-background .main__product__container {
   position: relative;
   height: 100%;
   width: 100%;
+}
+body .body main .main__product-background .main__product__container .container__main-produc-image {
+  position: absolute;
+  z-index: 999;
+  height: 30.5%;
+  width: 14%;
+  top: 32.5%;
+  left: 43%;
+  opacity: 0.5;
 }
 body .body main .main__product-background .main__product__container .product__product-image-silent {
   position: relative;
@@ -1661,587 +1671,6 @@ body .body main .main__product-background .main__product__container .gredient__f
   text-align: center;
   color: #663903;
 }
-body .body main .main__order-product-background {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-body .body main .main__order-product-background .product__container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-body .body main .main__order-product-background .product__container .form__button {
-  width: fit-content;
-  align-items: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  margin: auto;
-}
-body .body main .main__order-product-background .product__container .form__button button {
-  margin-top: 2%;
-  border: none;
-  outline: none;
-  margin: auto;
-  background-color: #8C561C;
-  color: white;
-  font-family: "SourceSerifPro-Bold";
-  height: 2rem;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.65rem;
-    height: 1.5rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.65rem;
-    height: 1.5rem;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.65rem;
-    height: 1.5rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.65rem;
-    height: 1.5rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.2rem;
-    height: 0.5rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.3rem;
-    height: 0.5rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .form__button button {
-    font-size: 0.3rem;
-    height: 0.5rem;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__main-form {
-  position: relative;
-  margin-top: 1%;
-  width: 100%;
-  height: fit-content;
-  font-family: "SourceSerifPro-Bold";
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form {
-    margin-top: -2%;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form {
-    margin-top: -2%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form {
-    margin-top: -2%;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-  position: relative;
-  width: 40%;
-  height: fit-content;
-  background-color: #FEBF27;
-  margin: auto;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    margin-top: 5%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    margin-top: 5%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    width: 60%;
-    height: fit-content;
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    font-size: 0.6rem;
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    font-size: 0.3rem;
-    width: 53%;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    font-size: 0.3rem;
-    width: 53%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form {
-    font-size: 0.3rem;
-    width: 53%;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form {
-  padding-top: 2%;
-  width: 100%;
-  height: 100%;
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-  width: 100%;
-  height: 25%;
-  margin: auto;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 10%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 5%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 0%;
-    font-size: 0.9rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 0%;
-    font-size: 0.5rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 0%;
-    font-size: 0.2rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 0%;
-    font-size: 0.2rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table {
-    height: 0%;
-    font-size: 0.2rem;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-  padding-top: 0.5%;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 0.2%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 1%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 0.5%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 0.4%;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 0.1%;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 0.1%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td {
-    padding-top: 0.1%;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td input {
-  width: 95%;
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-  font-family: "SourceSerifPro-Bold";
-  color: #663903;
-  width: -20%;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.6rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.6rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.6rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.3rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.3rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.24rem !important;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr input {
-  width: 100%;
-  padding: 0%;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
-    font-size: 0.7rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
-    font-size: 0.6rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
-    font-size: 0.3rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
-    font-size: 0.3rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr {
-    font-size: 0.3rem;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.65rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.65rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.35rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.3rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__main-form .main-form__form form table tr td:nth-child(1) {
-    font-size: 0.3rem;
-  }
-}
-body .body main .main__order-product-background .product__container .product__product-img {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-body .body main .main__order-product-background .product__container .product__product-img img {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-body .body main .main__order-product-background .product__container .product-container__title {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: fit-content;
-}
-body .body main .main__order-product-background .product__container .product-container__title .title-container {
-  position: relative;
-  width: 50%;
-  height: fit-content;
-  margin: auto;
-  text-align: center;
-}
-body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
-  color: #013B22;
-  height: 1px;
-  width: 80%;
-  margin: auto;
-  font-weight: 500;
-  background-color: #663903;
-  margin-top: 0.5%;
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
-    width: 63%;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
-    height: 0px;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
-    height: 0px;
-    margin-top: -2%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container hr {
-    height: 0px;
-    margin-top: -2%;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-  position: relative;
-  padding-top: 0%;
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  font-size: 5.5rem;
-  font-family: "UVNMauTim2";
-  color: #663903;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 2.4rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 2.4rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 1.25rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__title .title-container .title__title {
-    font-size: 1.2rem;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__discount-title {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  height: fit-content;
-}
-body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-  position: relative;
-  height: fit-content;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-  padding-top: 3.5%;
-  font-family: "SourceSerifPro-BoldItalic";
-  color: #663903;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    margin-top: -3.5%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    margin-top: -4.5%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    margin-top: -4.5%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    padding-top: 0.7%;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    height: 50%;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    padding-top: 0%;
-    margin-top: -2%;
-    height: 50%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title {
-    padding-top: 0%;
-    margin-top: -2%;
-    height: 50%;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-  font-size: 1.7rem;
-  font-family: "constani";
-  font-weight: 600;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    font-size: 0.9rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    font-size: 0.5rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    margin-top: 5%;
-    font-size: 0.4rem;
-    line-height: 0.2rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail {
-    margin-top: 6%;
-    font-size: 0.4rem;
-    line-height: 1rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p {
-    line-height: 0.1rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p {
-    line-height: 0.1rem;
-  }
-}
-body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-  font-size: 3rem;
-  font-weight: bolder;
-  font-family: "SourceSerifPro-BoldItalic";
-}
-@media only screen and (min-width: 1200px) and (max-width: 1407px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-    font-size: 2rem;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-    font-size: 2rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-    margin-top: 5%;
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-    margin-top: 5%;
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-    margin-top: 5%;
-    font-size: 0.7rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  body .body main .main__order-product-background .product__container .product-container__discount-title .discount-title__title .title-detail p .title__modify {
-    margin-top: 5%;
-    font-size: 0.7rem;
-  }
-}
 body .body main .main__register-product-background {
   position: relative;
   height: 100%;
@@ -2552,47 +1981,47 @@ body .body main .main__register-product-background .register__container .registe
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1407px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0.7rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 424px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -2783,6 +2212,7 @@ body .body main .main__register-product-background .register__container .registe
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
   left: 0px;
   margin-top: 5%;
+  font-size: 1.2rem;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1407px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__phone-number {
@@ -2830,49 +2260,89 @@ body .body main .main__register-product-background .register__container .registe
   display: flex;
   justify-content: space-between;
 }
+body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+  transform: scale(0.65, 0.65);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1407px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.6, 0.6);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.6, 0.6);
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.5, 0.5);
+    margin-top: -30%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a:first-child img {
+    transform: scale(0.5, 0.5);
+    margin-top: -70%;
+  }
+}
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a {
   height: 100%;
   width: 100%;
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
   cursor: pointer;
-  transform: scale(0.5, 0.55);
+  transform: scale(0.6, 0.6);
   margin-right: -15%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1407px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.33, 0.55);
+    transform: scale(0.55, 0.55);
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.4, 0.55);
+    transform: scale(0.55, 0.55);
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.35, 0.45);
+    transform: scale(0.45, 0.45);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.35, 0.45);
+    transform: scale(0.45, 0.45);
   }
 }
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.35, 0.45);
+    transform: scale(0.45, 0.45);
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 424px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.35, 0.45);
+    transform: scale(0.45, 0.45);
     margin-top: -30%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img {
-    transform: scale(0.35, 0.45);
+    transform: scale(0.45, 0.45);
     margin-top: -70%;
   }
 }
@@ -2882,17 +2352,17 @@ body .body main .main__register-product-background .register__container .registe
 }
 @media only screen and (min-width: 1200px) and (max-width: 1407px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img:nth-child(2) {
-    transform: scale(0.45, 0.45);
+    transform: scale(0.44, 0.45);
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img:nth-child(2) {
-    transform: scale(0.5, 0.5);
+    transform: scale(0.45, 0.5);
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__contact .contact__social a img:nth-child(2) {
-    transform: scale(0.3, 0.3);
+    transform: scale(0.25, 0.3);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
