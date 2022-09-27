@@ -1479,7 +1479,7 @@
                             position: absolute;
                             bottom: 11%;
                             width: 100%;
-                            font-size: 1.5rem;
+                            font-size: 1.7rem;
                             .form__title {
                                 width: fit-content;
                                 margin: auto;
@@ -1600,7 +1600,7 @@
                                             height: 105%;
                                         }
                                         @include responsive_320 {
-                                            height: 110%;
+                                            height: 114%;
                                         }
                                         h4 {
                                             margin-bottom: 1.5rem;
@@ -1646,6 +1646,7 @@
                                                 }
                                                 @include responsive_320 {
                                                     height: 8% !important;
+                                                    bottom: -2%;
                                                 }
                                                 .button {
                                                     height: 100%;

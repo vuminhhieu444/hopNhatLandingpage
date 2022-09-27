@@ -1799,7 +1799,7 @@ body .body main .main__register-product-background .register__container .registe
   position: absolute;
   bottom: 11%;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 body .body main .main__register-product-background .register__container .register-form__bottom-title .form__title {
   width: fit-content;
@@ -1975,7 +1975,7 @@ body .body main .main__register-product-background .register__container .registe
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form {
-    height: 110%;
+    height: 114%;
   }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form h4 {
@@ -2041,6 +2041,7 @@ body .body main .main__register-product-background .register__container .registe
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button {
     height: 8% !important;
+    bottom: -2%;
   }
 }
 body .body main .main__register-product-background .register__container .register__main-register .register__form-container .register__fluid-container .fluid-container__main-form form .main-form__button .button {
